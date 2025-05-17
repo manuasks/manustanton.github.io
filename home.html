@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manu Stanton</title>
+  <style>
+    :root {
+      --blue: #1e3a5f;
+      --green: #3b7a57;
+      --earth: #d8cab8;
+      --orange: #ff914d;
+      --overlay: rgba(0, 0, 0, 0.4);
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      height: 100%;
+      background: var(--blue);
+    }
+
+    .hero {
+      background: url('site background.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: var(--overlay);
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .headshot {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .skills {
+      margin: 20px 0;
+      font-size: 0.95rem;
+      color: #d1d1d1;
+    }
+
+    .button-outline {
+      display: inline-block;
+      border: 2px solid var(--orange);
+      color: var(--orange);
+      padding: 10px 22px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 12px;
+      margin-left: 10px;
+    }
+
+    .about-link {
+      display: block;
+      margin-top: 16px;
+      font-size: 1rem;
+      color: #ccc;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--blue);
+      color: #ccc;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .skills {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <img src="Headshot 2025.jpg" alt="Manu Stanton Headshot" class="headshot" />
+      <h1>Manu Stanton</h1>
+      <p class="skills">Product Management • Project Management • Strategy • AI & Machine Learning • Agile Methodologies • Salesforce</p>
+      <a class="button-outline" href="https://www.linkedin.com/in/manustanton/" target="_blank" rel="noopener noreferrer">Visit my LinkedIn</a>
+      <a class="about-link" href="about.html">About</a>
+    </div>
+  </div>
+  <footer>
+    More projects, blogs, and insights coming soon...
+  </footer>
+</body>
+</html>

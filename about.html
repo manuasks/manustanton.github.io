@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Manu</title>
+  <style>
+    :root {
+      --blue: #1e3a5f;
+      --green: #3b7a57;
+      --earth: #d8cab8;
+      --orange: #ff914d;
+      --overlay: rgba(0, 0, 0, 0.5);
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      height: 100%;
+      background: url('site background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: var(--overlay);
+      z-index: 0;
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      padding: 40px 20px;
+      max-width: 700px;
+      margin: 0 auto;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .photo {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 12px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+      display: block;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 1.3rem;
+      color: #d1d1d1;
+    }
+
+    .call-to-action {
+      font-size: 1.1rem;
+      margin-top: 30px;
+      color: var(--orange);
+      font-weight: bold;
+    }
+
+    .mantra {
+      margin-top: 40px;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: #ccc;
+      border-left: 4px solid var(--green);
+      padding-left: 16px;
+    }
+
+    a {
+      color: var(--orange);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      p, .call-to-action, .mantra {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>About Manu</h1>
+    <img src="Dreamfoce2024selfie.jpg" alt="Manu at Dreamforce 2024" class="photo" />
+    <p>
+      I believe in building systems that make people’s lives better, especially where complexity meets compassion. I want to leverage technology to do work that matters and improves people’s experiences.
+    </p>
+
+    <p class="call-to-action">
+      Want to connect? Reach out via <a href="https://www.linkedin.com/in/manustanton/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+    </p>
+
+    <p class="mantra">
+      “Ma ka hana, ka 'ike” — In work, there is wisdom.
+    </p>
+  </main>
+</body>
+</html>
