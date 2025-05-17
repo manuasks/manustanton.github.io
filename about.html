@@ -10,110 +10,73 @@
       --green: #3b7a57;
       --earth: #d8cab8;
       --orange: #ff914d;
-      --overlay: rgba(0, 0, 0, 0.5);
+      --overlay: rgba(0, 0, 0, 0.4);
     }
 
     body, html {
       margin: 0;
-      padding: 0;
+      padding: 20px;
       font-family: 'Segoe UI', sans-serif;
+      background: var(--blue);
       color: white;
-      height: 100%;
-      background: url('site background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      position: relative;
+      min-height: 100vh;
     }
 
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-color: var(--overlay);
-      z-index: 0;
-    }
-
-    main {
-      position: relative;
-      z-index: 1;
-      padding: 40px 20px;
+    .container {
       max-width: 700px;
       margin: 0 auto;
-      min-height: 100vh;
-      box-sizing: border-box;
+      background-color: rgba(30, 58, 95, 0.85);
+      padding: 30px;
+      border-radius: 12px;
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      text-align: center;
+      margin-top: 0;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
     }
 
-    .photo {
-      width: 100%;
-      max-width: 450px;
-      border-radius: 12px;
-      object-fit: cover;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+    .about-headshot {
       display: block;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--green);
+      margin: 0 auto 25px auto;
     }
 
     p {
       font-size: 1.1rem;
       line-height: 1.5;
-      margin-bottom: 1.3rem;
-      color: #d1d1d1;
+      margin-bottom: 20px;
+      color: #d8cab8;
     }
 
-    .call-to-action {
-      font-size: 1.1rem;
-      margin-top: 30px;
-      color: var(--orange);
-      font-weight: bold;
-    }
-
-    .mantra {
-      margin-top: 40px;
+    .motivational {
       font-style: italic;
-      font-size: 1.2rem;
-      color: #ccc;
-      border-left: 4px solid var(--green);
-      padding-left: 16px;
+      color: var(--earth);
+      text-align: center;
+      margin-top: 30px;
+      font-size: 1.1rem;
     }
 
-    a {
-      color: var(--orange);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.8rem;
-      }
-      p, .call-to-action, .mantra {
-        font-size: 1rem;
-      }
-    }
   </style>
 </head>
 <body>
-  <main>
+  <div class="container">
     <h1>About Manu</h1>
-    <img src="Dreamfoce2024selfie.jpg" alt="Manu at Dreamforce 2024" class="photo" />
+    <img src="Dreamfoce2024selfie.jpg" alt="Manu Stanton" class="about-headshot" />
     <p>
-      I believe in building systems that make people’s lives better, especially where complexity meets compassion. I want to leverage technology to do work that matters and improves people’s experiences.
+      I believe in building systems that make people’s lives better, especially where complexity meets compassion. I want to leverage technology to do work that matters and improves people’s experiences and outcomes.
     </p>
-
-    <p class="call-to-action">
-      Want to connect? Reach out via <a href="https://www.linkedin.com/in/manustanton/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+    <p>
+      With a background in product and project management, strategy, and AI, I’m passionate about driving meaningful impact through innovation. I am always exploring new ways to apply my skills to challenges that matter.
     </p>
-
-    <p class="mantra">
+    <p class="motivational">
       “Ma ka hana, ka 'ike” — In work, there is wisdom.
     </p>
-  </main>
+  </div>
 </body>
 </html>
