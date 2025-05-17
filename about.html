@@ -79,9 +79,30 @@
       margin-top: 30px;
       font-size: 1.1rem;
     }
+
+    .back-link {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 2;
+      font-size: 1rem;
+      color: var(--earth);
+      text-decoration: none;
+      background-color: rgba(30, 58, 95, 0.85);
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-link:hover {
+      background-color: var(--orange);
+      color: white;
+    }
   </style>
 </head>
 <body>
+  <a href="index.html" class="back-link">← Home</a>
   <div class="container">
     <h1>About Manu</h1>
     <img src="Dreamfoce2024selfie.jpg" alt="Manu Stanton" class="about-headshot" />
